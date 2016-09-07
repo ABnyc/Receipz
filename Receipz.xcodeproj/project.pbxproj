@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B9A55791D80299B00FE937F /* CreateReceipeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9A55781D80299B00FE937F /* CreateReceipeVC.swift */; };
 		2BC5D7331D7DF89900DCEE58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5D7321D7DF89900DCEE58 /* AppDelegate.swift */; };
 		2BC5D7351D7DF89900DCEE58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5D7341D7DF89900DCEE58 /* ViewController.swift */; };
 		2BC5D7381D7DF89900DCEE58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BC5D7361D7DF89900DCEE58 /* Main.storyboard */; };
 		2BC5D73B1D7DF89900DCEE58 /* Receipz.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5D7391D7DF89900DCEE58 /* Receipz.xcdatamodeld */; };
 		2BC5D73D1D7DF89900DCEE58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BC5D73C1D7DF89900DCEE58 /* Assets.xcassets */; };
 		2BC5D7401D7DF89900DCEE58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BC5D73E1D7DF89900DCEE58 /* LaunchScreen.storyboard */; };
+		2BC5D74C1D7E5BCF00DCEE58 /* Receipe+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5D74A1D7E5BCF00DCEE58 /* Receipe+CoreDataProperties.swift */; };
+		2BC5D74D1D7E5BCF00DCEE58 /* Receipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5D74B1D7E5BCF00DCEE58 /* Receipe.swift */; };
+		2BF40A591D7EE9F900BD14DB /* ReceipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF40A581D7EE9F900BD14DB /* ReceipeCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B9A55781D80299B00FE937F /* CreateReceipeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateReceipeVC.swift; sourceTree = "<group>"; };
 		2BC5D72F1D7DF89900DCEE58 /* Receipz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Receipz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BC5D7321D7DF89900DCEE58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BC5D7341D7DF89900DCEE58 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +29,9 @@
 		2BC5D73C1D7DF89900DCEE58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BC5D73F1D7DF89900DCEE58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2BC5D7411D7DF89900DCEE58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BC5D74A1D7E5BCF00DCEE58 /* Receipe+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Receipe+CoreDataProperties.swift"; path = "../Receipe+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		2BC5D74B1D7E5BCF00DCEE58 /* Receipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Receipe.swift; path = ../Receipe.swift; sourceTree = "<group>"; };
+		2BF40A581D7EE9F900BD14DB /* ReceipeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceipeCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,43 @@
 		2BC5D7311D7DF89900DCEE58 /* Receipz */ = {
 			isa = PBXGroup;
 			children = (
+				2BC5D7491D7E5B8F00DCEE58 /* Controller */,
+				2BC5D7481D7E5B8900DCEE58 /* View */,
+				2BC5D7471D7E5B8200DCEE58 /* Model */,
 				2BC5D7321D7DF89900DCEE58 /* AppDelegate.swift */,
-				2BC5D7341D7DF89900DCEE58 /* ViewController.swift */,
 				2BC5D7361D7DF89900DCEE58 /* Main.storyboard */,
 				2BC5D73C1D7DF89900DCEE58 /* Assets.xcassets */,
 				2BC5D73E1D7DF89900DCEE58 /* LaunchScreen.storyboard */,
 				2BC5D7411D7DF89900DCEE58 /* Info.plist */,
 				2BC5D7391D7DF89900DCEE58 /* Receipz.xcdatamodeld */,
+				2BF40A581D7EE9F900BD14DB /* ReceipeCell.swift */,
 			);
 			path = Receipz;
+			sourceTree = "<group>";
+		};
+		2BC5D7471D7E5B8200DCEE58 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2BC5D74A1D7E5BCF00DCEE58 /* Receipe+CoreDataProperties.swift */,
+				2BC5D74B1D7E5BCF00DCEE58 /* Receipe.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		2BC5D7481D7E5B8900DCEE58 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		2BC5D7491D7E5B8F00DCEE58 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2BC5D7341D7DF89900DCEE58 /* ViewController.swift */,
+				2B9A55781D80299B00FE937F /* CreateReceipeVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BC5D74D1D7E5BCF00DCEE58 /* Receipe.swift in Sources */,
 				2BC5D7351D7DF89900DCEE58 /* ViewController.swift in Sources */,
 				2BC5D73B1D7DF89900DCEE58 /* Receipz.xcdatamodeld in Sources */,
+				2BC5D74C1D7E5BCF00DCEE58 /* Receipe+CoreDataProperties.swift in Sources */,
+				2B9A55791D80299B00FE937F /* CreateReceipeVC.swift in Sources */,
 				2BC5D7331D7DF89900DCEE58 /* AppDelegate.swift in Sources */,
+				2BF40A591D7EE9F900BD14DB /* ReceipeCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +332,7 @@
 				2BC5D7461D7DF89900DCEE58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
